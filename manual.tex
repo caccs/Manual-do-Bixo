@@ -2,12 +2,55 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[brazil]{babel}
-\title{Manual}
+\usepackage{indentfirst}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{multirow}
+
+% necessário para ter várias seções dentro de seções
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\title{Manual do Bixo 2017}
 \author{Centro Acadêmico Pata do Bisão, Gestão 2016/2}
-\date{Setembro/2016}
+\date{\today}
 
 \begin{document}
+%%% CAPA %%%
 \maketitle
-\section{teste}
+\thispagestyle{empty}
+\clearpage
+\setcounter{page}{1}
+
+%%% ÍNDICE %%%
+\clearpage
+\tableofcontents
+
+%%% SOBRE %%%
+\clearpage
+\input{./sobre/main.tex}
+
+%%% BEM-VINDO %%%
+\clearpage
+\input{./bem_vindo/main.tex}
+
+%%% BREVE INTRODUÇÃO AO CURSO %%%
+\input{./introducao_curso/main.tex}
+
+%%% VIDA ACADÊMICA %%%
+\input{./vida_academica/main.tex}
+
+%%% VIDA FORA DA ACADEMIA %%%
+\input{./vida_fora_academia/main.tex}
+
+%%% GLOSSÁRIO %%%
+\input{./glossario/main.tex}
+
+%%% LINKS ÚTEIS %%%
+\input{./links/main.tex}
+\clearpage
+%%% MAPA DA UFSCAR %%%%
+\input{./mapa_ufscar/main.tex}
+\thispagestyle{empty}
 
 \end{document}
