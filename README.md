@@ -1,4 +1,4 @@
-[![License: CC BY-NC 4.0](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/) ![Travis branch](https://api.travis-ci.org/caccs/EditalEleicao.svg)
+[![License: CC BY-NC 4.0](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/) ![Travis branch](https://travis-ci.org/caccs/Manual-do-Bixo.svg?branch=master)
 ## Manual do Bixo - Centro Acadêmico Ciência da Computação Sorocaba (CACCS)
 ---
 Manual do Bixo feito originalmente em 2013, aprimorado em 2015 e agora convertido para Latex. O intuito deste documento é instruir os novos estudantes apresentando a cidade e a universidade.
