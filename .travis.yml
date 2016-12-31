@@ -1,0 +1,15 @@
+before_install:
+- sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng latex-xcolor texlive-full
+script:
+- mkdir _build
+- pdflatex -interaction nonstopmode -output-directory _build ./manual.tex
+- pdflatex -interaction nonstopmode -output-directory _build ./manual.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: OEBWHgLQpZDpcqbU+WMSRFwXpwgW7wZSkZbWximVy33aqQKbGdz9yz1yzSbsSiLtrm8sWBXwUQQ4yMdt0XdgXNqGTm8wRSsEYpA+HOqRK5RYVZdzNtpmMned5l+teFyeeXLPdFQDMoK11aKBW0TNH58xHhDORdGL/rrWRHTEicZDQ1upo1qF6bDQPsnLVy3BVi8Oe/fxLAuYzYy4OIhUMSnh7RtEMBBIkuhfPFfeV8FJWsy52gU8oippxcAs0ptF6e7OPl/CyTJe0AkX/K+qpjVQiIwfzlkce3MOQgbIP4TpXFT7mB/cQff6K8QiD8c8yyW9XtXkKokXjGDJ+8m73yUO3XHjUIY+YZKcSWnyTuiXCRDwHL7pEqSU/zftrDeoRw8vjdNMv2t4NwePhMbCENWgEIEmCxx7QNmklmm9/OQDLseEOOQl9DhR1vit27oSjhOGUiktvTFIWBsi/3jCc4sMSr+oiZ6o2lQxpwieT+oWg8AcFlkULk/ylaW+TufWPkr4jyFj/sBAaYsFpIQxEoTc50FiJo3WlMLvH8UQQ3Yt0+Pz3X0Gdae+lcZNRPWOgnvn9JKToA60Ve/Cm9h1VA4q1gk/j7bxkByCIR/pdEFaNdaCBeqUEi8CNsvow691XqjRvR5nfP3JyE8LKQKp4ll5HixTq9NmurJL+HN0D0s=
+  file:
+    _build/manual.pdf
+  skip_cleanup: true
+  on:
+    repo: caccs/EditalEleicao
