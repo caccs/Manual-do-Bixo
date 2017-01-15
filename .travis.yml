@@ -1,14 +1,14 @@
 before_install:
-- sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng latex-xcolor texlive-full
+- sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended
+  texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng latex-xcolor
+  texlive-full
 script:
 - chmod +x build.sh
-- ./build.sh
+- "./build.sh"
 deploy:
   provider: releases
   api_key:
-    secure: OEBWHgLQpZDpcqbU+WMSRFwXpwgW7wZSkZbWximVy33aqQKbGdz9yz1yzSbsSiLtrm8sWBXwUQQ4yMdt0XdgXNqGTm8wRSsEYpA+HOqRK5RYVZdzNtpmMned5l+teFyeeXLPdFQDMoK11aKBW0TNH58xHhDORdGL/rrWRHTEicZDQ1upo1qF6bDQPsnLVy3BVi8Oe/fxLAuYzYy4OIhUMSnh7RtEMBBIkuhfPFfeV8FJWsy52gU8oippxcAs0ptF6e7OPl/CyTJe0AkX/K+qpjVQiIwfzlkce3MOQgbIP4TpXFT7mB/cQff6K8QiD8c8yyW9XtXkKokXjGDJ+8m73yUO3XHjUIY+YZKcSWnyTuiXCRDwHL7pEqSU/zftrDeoRw8vjdNMv2t4NwePhMbCENWgEIEmCxx7QNmklmm9/OQDLseEOOQl9DhR1vit27oSjhOGUiktvTFIWBsi/3jCc4sMSr+oiZ6o2lQxpwieT+oWg8AcFlkULk/ylaW+TufWPkr4jyFj/sBAaYsFpIQxEoTc50FiJo3WlMLvH8UQQ3Yt0+Pz3X0Gdae+lcZNRPWOgnvn9JKToA60Ve/Cm9h1VA4q1gk/j7bxkByCIR/pdEFaNdaCBeqUEi8CNsvow691XqjRvR5nfP3JyE8LKQKp4ll5HixTq9NmurJL+HN0D0s=
-  file:
-    _build/manual.pdf
-  skip_cleanup: true
+    secure: l/Co62r8zQdFrCczRK4U9JhyAO0kk20p34iwlk+zfJyfKeCcky05RCso0g5P6jEDL3wXmXl2au/qh22h1iYmoUxgvg/BjDUkpu+lFG//Xd+DFUl0YDK6WjKBWqGIhL/FaOhqRH0pDcfH8R3dKatFvY2XThJNCHAomQh8bs1hgyAlIpjux03lcLeymLBC2N/SYWFKysZFv/3P2VnRMjeoPU0Yc7R2+DeM3vOtdkHTw5Y05wMbttTz1mff2tC43eMiHIHV8R0aAjWLvVo+arClQqP7T/Qd2vQ+lMBwerBUVTm9NNszum33nStWRid7E75s2RWmNomX979g4qR0hS0TKgO+Qvyr6dzAHMVT8TZ53uQD7IPhw+cKhwhlDgvxWvaqFE3mHNlOoc3kja3qqMh1Il7/kCnyy0Rj2DjK35kklZIEt74J9pXo7ukuIlPBvsWXCl2L/daKRvsHUCJ86z+crAeWc8AGkmbonHw3razVlbagb7FGTVx8zmLG5nuKFtmqoAsq7fpQIr+tpsVcrnkvKYFVLphM3i0XdzXmFWPocPwIPuJNSR0GMrr+0tJ8bSZW17DhLFGZCWniM68OqSYjCmpLQT1Jw20C8Cao2QsycC/I0hNIE8Dl45+uKmnDbl2lZWjLoP8FCdd0CTVJjiAPJrz0yMsm+B1VYjMln5jDRzA=
+  file: "/_build/manual.pdf"
   on:
     repo: caccs/Manual-do-Bixo
