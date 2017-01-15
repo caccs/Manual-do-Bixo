@@ -11,4 +11,4 @@ deploy:
     _build/manual.pdf
   skip_cleanup: true
   on:
-    repo: caccs/EditalEleicao
+    repo: caccs/Manual-do-Bixo
