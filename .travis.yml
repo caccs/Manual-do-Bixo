@@ -1,6 +1,7 @@
 before_install:
 - sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng latex-xcolor texlive-full
 script:
+- chmod +x build.sh
 - ./build.sh
 deploy:
   provider: releases
