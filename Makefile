@@ -21,6 +21,6 @@ $(REPORT): $(DEPS)
 clean:
 	-rm *.{aux,log,toc}
 
-# read:
-#	 evince $(REPORT)
+read:
+	evince $(REPORT)
 
