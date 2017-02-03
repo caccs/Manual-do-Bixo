@@ -14,6 +14,7 @@ all: $(REPORT)
 
 $(REPORT): $(DEPS) 
 	$(LATEX) $<
+	$(LATEX) $<
 	echo $(basename $<)
 
 .PHONY: clean
