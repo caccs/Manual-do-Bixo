@@ -7,7 +7,7 @@
 
 
 REPORT = manual.pdf
-LATEX = pdflatex --shell-escape -output-directory _build
+LATEX = pdflatex -interaction nonstopmode --shell-escape -output-directory _build
 DEPS = ./manual.tex
 
 all: $(REPORT)
