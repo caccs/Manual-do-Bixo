@@ -17,6 +17,7 @@ $(REPORT): $(DEPS)
 	$(LATEX) $<
 	$(LATEX) $<
 	echo $(basename $<)
+	exit 0
 
 .PHONY: clean
 
@@ -27,5 +28,5 @@ clean:
 	-rm -rf ./_build
 
 read:
-	evince $(REPORT)
+	evince _build/$(REPORT)
 
