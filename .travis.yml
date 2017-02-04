@@ -3,8 +3,7 @@ before_install:
   texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng latex-xcolor
   texlive-full
 script:
-- chmod +x build.sh
-- "./build.sh"
+- make
 deploy:
   provider: releases
   api_key:

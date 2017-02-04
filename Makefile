@@ -7,12 +7,13 @@
 
 
 REPORT = manual.pdf
-LATEX = pdflatex --shell-escape
-DEPS = manual.tex
+LATEX = pdflatex --shell-escape -output-directory _build
+DEPS = ./manual.tex
 
 all: $(REPORT)
 
 $(REPORT): $(DEPS) 
+	mkdir _build
 	$(LATEX) $<
 	$(LATEX) $<
 	echo $(basename $<)
@@ -20,7 +21,10 @@ $(REPORT): $(DEPS)
 .PHONY: clean
 
 clean:
-	-rm *.{aux,log,toc}
+	-rm *.aux
+	-rm *.pdf
+	-rm *.toc
+	-rm -rf ./_build
 
 read:
 	evince $(REPORT)
