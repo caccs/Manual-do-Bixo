@@ -14,17 +14,13 @@ all: $(REPORT)
 
 $(REPORT): $(DEPS) 
 	mkdir _build
-	$(LATEX) $<
-	$(LATEX) $<
+	$(LATEX) $< 2> errors.txt
+	$(LATEX) $< 2> errors.txt
 	echo $(basename $<)
-	exit 0
 
 .PHONY: clean
 
 clean:
-	-rm *.aux
-	-rm *.pdf
-	-rm *.toc
 	-rm -rf ./_build
 
 read:
