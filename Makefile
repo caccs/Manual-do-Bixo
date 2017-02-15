@@ -17,6 +17,7 @@ $(REPORT): $(DEPS)
 	$(LATEX) $< 2> errors.txt
 	$(LATEX) $< 2> errors.txt
 	echo $(basename $<)
+	$(LATEX) $< 2> errors.txt
 
 .PHONY: clean
 
