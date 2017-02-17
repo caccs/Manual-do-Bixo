@@ -14,10 +14,10 @@ all: $(REPORT)
 
 $(REPORT): $(DEPS) 
 	mkdir _build
-	$(LATEX) $< 2> errors.txt
-	$(LATEX) $< 2> errors.txt
+	$(LATEX) $<
+	$(LATEX) $<
 	echo $(basename $<)
-	$(LATEX) $< 2> errors.txt
+	$(LATEX) $<
 
 .PHONY: clean
 
