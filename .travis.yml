@@ -13,4 +13,5 @@ deploy:
   file: "./_build/manual.pdf"
   skip_cleanup: true
   on:
+    tags: true
     repo: caccs/Manual-do-Bixo
