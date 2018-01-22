@@ -10,6 +10,7 @@
 \usepackage{vwcol}
 \usepackage{subfigure}
 \renewcommand{\familydefault}{\sfdefault}
+
 % necessário para ter várias seções dentro de seções
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
@@ -19,11 +20,12 @@
 \date{\today}
 
 \begin{document}
+
 %%% CAPA %%%
-\begin{figure}
-    \hspace*{-3.7cm}\includegraphics{./imagem/capa2017.pdf}
+\begin{figure}[p]
+  \thispagestyle{empty}
+  \hspace*{-2.4cm}\includegraphics{./imagem/capa2018.pdf}
 \end{figure}
-\thispagestyle{empty}
 
 \clearpage
 \input{./licenca/main.tex}
