@@ -5,7 +5,11 @@ Manual do Bixo feito originalmente em 2013, aprimorado em 2015 e agora convertid
 
 ### Instruções de Compilação:
 ---
-
+1. Entre na pasta principal e digite `make`. 
+2. Pronto, acabou.
+2.a Se o seu leitor de PDF for o Evince, você pode abrir o arquivo 
+automaticamente usando `make read`!
+3. Para eliminar arquivos indesejados (como logs, .toc e .aux), você pode usar `make clean`.
 
 ### Como Contribuir:
 ---
@@ -15,6 +19,7 @@ Manual do Bixo feito originalmente em 2013, aprimorado em 2015 e agora convertid
 4. Commit suas mudanças: `git commit -am 'Adicionando uma nova versão'`
 5. Push para o branch: `git push origin nova-versao`
 6. Envie seu pull request :D
+
 
 ### Conteúdo:
 ---
@@ -60,6 +65,4 @@ Manual do Bixo feito originalmente em 2013, aprimorado em 2015 e agora convertid
 - Glossário
 - Outros Links Úteis
 - Mapa da UFSCar
-
-
 
