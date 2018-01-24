@@ -6,8 +6,8 @@ Manual do Bixo feito originalmente em 2013, aprimorado em 2015 e agora convertid
 ### Instruções de Compilação:
 ---
 1. Entre na pasta principal e digite `make`. 
-2. Pronto, acabou.
-2.a Se o seu leitor de PDF for o Evince, você pode abrir o arquivo 
+2. Pronto, acabou.    
+    a) Se o seu leitor de PDF for o Evince, você pode abrir o arquivo 
 automaticamente usando `make read`!
 3. Para eliminar arquivos indesejados (como logs, .toc e .aux), você pode usar `make clean`.
 
