@@ -2,16 +2,15 @@ before_install:
 - sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended
   texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng latex-xcolor
   texlive-full
-
 script:
 - chmod +x build.sh
-- ./build.sh
+- "./build.sh"
 deploy:
   provider: releases
   api_key:
-    secure: l/Co62r8zQdFrCczRK4U9JhyAO0kk20p34iwlk+zfJyfKeCcky05RCso0g5P6jEDL3wXmXl2au/qh22h1iYmoUxgvg/BjDUkpu+lFG//Xd+DFUl0YDK6WjKBWqGIhL/FaOhqRH0pDcfH8R3dKatFvY2XThJNCHAomQh8bs1hgyAlIpjux03lcLeymLBC2N/SYWFKysZFv/3P2VnRMjeoPU0Yc7R2+DeM3vOtdkHTw5Y05wMbttTz1mff2tC43eMiHIHV8R0aAjWLvVo+arClQqP7T/Qd2vQ+lMBwerBUVTm9NNszum33nStWRid7E75s2RWmNomX979g4qR0hS0TKgO+Qvyr6dzAHMVT8TZ53uQD7IPhw+cKhwhlDgvxWvaqFE3mHNlOoc3kja3qqMh1Il7/kCnyy0Rj2DjK35kklZIEt74J9pXo7ukuIlPBvsWXCl2L/daKRvsHUCJ86z+crAeWc8AGkmbonHw3razVlbagb7FGTVx8zmLG5nuKFtmqoAsq7fpQIr+tpsVcrnkvKYFVLphM3i0XdzXmFWPocPwIPuJNSR0GMrr+0tJ8bSZW17DhLFGZCWniM68OqSYjCmpLQT1Jw20C8Cao2QsycC/I0hNIE8Dl45+uKmnDbl2lZWjLoP8FCdd0CTVJjiAPJrz0yMsm+B1VYjMln5jDRzA=
+    secure: nrHVC1w0a7MJsYPK7C1dWOCGMPZ5ZsJ0Ek7A+L8gD3UHRynMfTCqt2sC68JNH5Wjymx8mce2aSi9Sn7TfEnzbZSQ2lyjA0DwHj0sxSLYqAXpzFh+vFNL0sEa4CdtfyW3yeqhefdpKXD3YTtJs+l84BW2PU2Jxn0wGm0xgZgZHD1cFUw7rCgWbHb/P7nbgqB+M6QeSN0FoMvnxLJyxaSXEkjhPJdAFj1kq1SnsgW5hZiGjNqfLpulIIcbeBHrIR+bQvseV7f9hPxtfyhAUWCtEEd96FXyR03eVWStWK2J1tDYV7c3XVhtNGbbMq4VMj391OTVWURIXmSuSRPEsfaRynrSHzYABHoloOJjOfPL0ibNXtfY+0+tXd3XezyYe5ScmO0JbvZTX1O+F3/aldVY767flIBW2NC+7q3HnpTuwyzRYAYlXCsarlS80o5qV0tuIKEAO+C5/MiqWs8qtdsOyzCXM7rghbk8XnFc4EwLdusld2zW5WFmbpzumtkeOVfQMaH2Oji8K+vcqpCPL9DsowurzhkD3lmYLXmRq7ob+du5KGsBDI4WQnIJgnoDZifb4uHZRaBL3fj+l/cPVF8miBua9d+U35g8rb44+XXSZxzR6T8YLjo/2UgOIr1Y7FDDZ0b1X7iZopda1mkynOfHMeliNZV8bHZ+JPA98jzQ2po=
   file: "./_build/manual.pdf"
   skip_cleanup: true
   on:
-    tags: true
     repo: caccs/Manual-do-Bixo
+    tags: true
