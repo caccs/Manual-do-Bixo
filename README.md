@@ -4,12 +4,18 @@
 Manual do Bixo feito originalmente em 2013, aprimorado em 2015 e agora convertido para Latex. O intuito deste documento é instruir os novos estudantes apresentando a cidade e a universidade.
 
 ### Instruções de Compilação:
----
+##### Para Linux
 1. Entre na pasta principal e digite `make`. 
 2. Pronto, acabou.    
     a) Se o seu leitor de PDF for o Evince, você pode abrir o arquivo 
 automaticamente usando `make read`!
 3. Para eliminar arquivos indesejados (como logs, .toc e .aux), você pode usar `make clean`.
+
+##### Para Windows
+1. Baixe e instale o [MiKTeX](https://miktex.org/)
+2. Baixe e instale o [TeXworks](https://www.tug.org/texworks/)
+3. Abra os arquivos diretamente no TeXworks.
+    - Válido lembrar que você deve utilizar `pdfLaTeX` como ferramenta de processamento para compilar este Manual.
 
 ### Como Contribuir:
 ---
